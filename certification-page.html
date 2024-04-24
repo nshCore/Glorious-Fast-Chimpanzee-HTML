@@ -92,6 +92,10 @@
 
       // If 'certification' parameter is present and matches an image, display the success message and image
       if (certificationName && certificationName !== "") {
+        // Append .jpg extension if not present
+        if (!certificationName.match(/\.jpg$/i)) {
+          certificationName += ".jpg";
+        }
         var img = new Image();
         img.onload = function() {
           // Hide error message
