@@ -661,11 +661,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-@media(max-width: 1600px) {
-  .home-container28 {
-    width: 400px;
-  }
-}
 @media(max-width: 991px) {
   .home-hero1 {
     flex-direction: column;
